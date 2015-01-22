@@ -9,6 +9,7 @@ public class Person {
     private String firstName;
     private String lastName;
     private int age;
+    private long phone;
 
     public String getFirstName() {
         return firstName;
@@ -32,5 +33,13 @@ public class Person {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    public long getPhone() {
+        return phone;
+    }
+
+    public void setPhone(long phone) {
+        this.phone = phone;
     }
 }

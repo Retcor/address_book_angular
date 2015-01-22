@@ -21,7 +21,7 @@ import java.util.List;
 @RestController
 public class AdminController {
 
-    @RequestMapping("/html")
+    @RequestMapping("/main")
     public List<Person> index() {
         List<Person> people = new ArrayList<Person>();
 

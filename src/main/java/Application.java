@@ -17,7 +17,6 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 @Configuration
 @EnableAutoConfiguration
 @ComponentScan
-@EnableWebMvc
 public class Application extends WebMvcAutoConfiguration {
     public static void main(String[] args) {
         ApplicationContext ctx = SpringApplication.run(Application.class, args);
