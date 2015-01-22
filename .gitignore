@@ -5,7 +5,12 @@
 *.war
 *.ear
 
+# Intellij Files #
 .idea/*
 *.iml
 
+# Generated Files #
 target/*
+
+# Bower Components #
+src/main/webapp/bower_components/*
