@@ -29,7 +29,7 @@ public class AdminControllerTest {
 
     @Before
     public void setUp() throws Exception {
-        mvc = MockMvcBuilders.standaloneSetup(new AdminController()).build();
+        mvc = MockMvcBuilders.standaloneSetup(new PersonController()).build();
     }
 
     @Test

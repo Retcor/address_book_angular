@@ -1,11 +1,15 @@
-package entity;
+package model;
+
+import javax.persistence.Entity;
 
 /**
  * User: daniel.baker
  * Date: 1/21/15
  * Time: 4:51 PM
  */
+@Entity
 public class Person {
+    private int id;
     private String firstName;
     private String lastName;
     private int age;

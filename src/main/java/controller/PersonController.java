@@ -1,13 +1,8 @@
 package controller;
 
-import entity.Person;
-import org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration;
-import org.springframework.stereotype.Controller;
+import model.Person;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.servlet.ModelAndView;
-import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,7 +14,7 @@ import java.util.List;
  * Time: 2:02 PM
  */
 @RestController
-public class AdminController {
+public class PersonController {
 
     @RequestMapping("/main")
     public List<Person> index() {
