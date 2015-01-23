@@ -11,8 +11,7 @@
     var addressController = function($scope, $http) {
 
         var setInfo = function(response) {
-            $scope.people = response.data;
-            console.log("During http get service.");
+            $scope.addresses = response.data;
         };
 
         var error = function(response) {

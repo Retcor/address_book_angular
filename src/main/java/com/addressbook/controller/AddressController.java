@@ -25,8 +25,8 @@ public class AddressController {
 
     @RequestMapping("/main")
     public List<Address> index() {
-        List<Address> people = addressService.getAddresses();
-        return people;
+        List<Address> addresses = addressService.getAddresses();
+        return addresses;
     }
 
     @RequestMapping(value="/save", method = RequestMethod.POST)
