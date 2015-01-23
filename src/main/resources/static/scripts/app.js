@@ -10,8 +10,8 @@ var app = angular.module("addressBook", ["ngRoute"]);
 app.config(function($routeProvider){
    $routeProvider
        .when("/index", {
-            templateUrl: "../views/main.html",
-            controller: "MainController"
+            templateUrl: "../views/address.html",
+            controller: "AddressController"
        })
-       .otherwise({redirectTo:"/index"});
+       .otherwise({redirectTo: "/index"});
 });

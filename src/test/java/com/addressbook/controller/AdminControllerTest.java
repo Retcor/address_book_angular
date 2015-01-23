@@ -1,4 +1,4 @@
-package controller;
+package com.addressbook.controller;
 
 import static org.hamcrest.Matchers.is;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
@@ -29,7 +29,7 @@ public class AdminControllerTest {
 
     @Before
     public void setUp() throws Exception {
-        mvc = MockMvcBuilders.standaloneSetup(new PersonController()).build();
+        mvc = MockMvcBuilders.standaloneSetup(new AddressController()).build();
     }
 
     @Test
