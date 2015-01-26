@@ -1,0 +1,29 @@
+<div style="width: 600px">
+    <label for="sorter">Sort by: </label>
+    <select id="sorter" class="form-control" ng-model="addressSort">
+        <option value="name" selected>Name</option>
+        <option value="city">City</option>
+        <option value="state">State</option>
+        <option value="zip">Zip</option>
+    </select>
+    <table class="table table-hover">
+        <thead>
+        <th>Name</th>
+        <th>Street</th>
+        <th>City</th>
+        <th>State</th>
+        <th>Zip</th>
+        <th>Phone</th>
+        </thead>
+        <tbody>
+        <tr ng-repeat="address in addresses | orderBy: addressSort">
+            <td>{{address.name}}</td>
+            <td>{{address.street}}</td>
+            <td>{{address.city}}</td>
+            <td>{{address.state}}</td>
+            <td>{{address.zip}}</td>
+            <td>{{address.phone}}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>

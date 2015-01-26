@@ -1,0 +1,45 @@
+<div style="width: 600px">
+    <form class="form-horizontal">
+        <div class="form-group">
+            <label for="name" class="col-sm-2 control-label">Name:</label>
+            <div class="col-sm-10">
+                <input id="name" class="form-control" type="search" ng-model="name">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="street" class="col-sm-2 control-label">Street:</label>
+            <div class="col-sm-10">
+                <input id="street" class="form-control" type="search" ng-model="street">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="city" class="col-sm-2 control-label">City:</label>
+            <div class="col-sm-10">
+                <input id="city" class="form-control" type="search" ng-model="city">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="state" class="col-sm-2 control-label">State:</label>
+            <div class="col-sm-10">
+                <input id="state" class="form-control" type="search" ng-model="state">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="zip" class="col-sm-2 control-label">Zip:</label>
+            <div class="col-sm-10">
+                <input id="zip" class="form-control" type="search" ng-model="zip">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="phone" class="col-sm-2 control-label">Phone:</label>
+            <div class="col-sm-10">
+                <input id="phone" class="form-control" type="search" ng-model="phone">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <input type="submit" class="btn btn-default" value="Add" ng-click="saveAddress(name, street, city, state, zip, phone)">
+            </div>
+        </div>
+    </form>
+</div>

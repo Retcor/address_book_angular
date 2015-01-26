@@ -8,18 +8,17 @@
 (function(){
     var app = angular.module("addressBook");
 
-    var addressController = function($scope, $http) {
+    var addressController = function($scope, $http, address) {
 
-        var setInfo = function(response) {
-            $scope.addresses = response.data;
+        var setInfo = function(data) {
+            $scope.addresses = data;
         };
 
         var error = function(response) {
             $scope.error = "Something went wrong!";
         };
 
-        $http.get("../main")
-            .then(setInfo, error);
+        address.getAddresses().then(setInfo, error);
 
         $scope.saveAddress = function(name, street, city, state, zip, phone) {
             var addressObj = {
@@ -30,8 +29,9 @@
                 zip: zip,
                 phone: phone
             }
-            $http.post("../save", addressObj)
-                .then("Success!", error);
+
+            address.saveAddress(addressObj);
+
         };
 
     };

@@ -9,9 +9,13 @@ var app = angular.module("addressBook", ["ngRoute"]);
 
 app.config(function($routeProvider){
    $routeProvider
-       .when("/index", {
-            templateUrl: "../views/address.html",
+       .when("/add", {
+            templateUrl: "../views/addAddress.html",
             controller: "AddressController"
        })
-       .otherwise({redirectTo: "/index"});
+       .when("/addressList", {
+           templateUrl: "../views/addressList.html",
+           controller: "AddressController"
+       })
+       .otherwise({redirectTo: "/add"});
 });

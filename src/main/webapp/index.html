@@ -8,9 +8,24 @@
     <!-- app.js should always be on top -->
     <script src="../scripts/app.js"></script>
     <script src="../scripts/controllers/AddressController.js"></script>
+    <script src="../scripts/services/AddressService.js"></script>
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 </head>
 <body>
-<h1>Address Book</h1>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Address Book</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="#/add">Add</a></li>
+                <li><a href="#/addressList">List</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
 <div ng-view></div>
 </body>
 </html>
